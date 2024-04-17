@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Rubik", sans-serif;
+    color: #444;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    color: #fff;
+
+}
+
+header {
+    /* background-color: aquamarine; */
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(hero.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    /* background-color: greenyellow; */
+    padding: 24px;
+}
+
+
+
+.Header-container {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* background-color: aqua; */
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 32px;
+    line-height: 1.05;
+    /* color: #fff; */
+}
+
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+
+.btn:link,
+.btn:visited {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #e67e22;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 9px;
+    color: #fff;
+}
+
+
+h2 {
+    font-size: 44px;
+    margin-bottom: 48px;
+}
+
+section {
+    padding: 96px 0;
+    /* background-color: #f7f7f7; */
+    background-image: linear-gradient(to right, rgb(0, 85, 17), blue);
+}
+
+.Header-inside {
+    width: 50%;
+
+}

@@ -1,0 +1,105 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* ------------------------ */
+            /* GENERAL STYLES */
+            /* ------------------------ */
+            body {
+                font-family: 'Inter', sans-serif;
+                color: #343a40;
+
+
+            }
+
+            .accordion {
+                width: 700px;
+                margin: 100px auto;
+                background-color: #f8f8f8;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .items {
+                box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+                /* border-top: 4px solid #087f57; */
+                padding: 30px;
+
+
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                column-gap: 20px;
+                row-gap: 32px;
+                align-items: center;
+
+            }
+
+            .number,
+            .text {
+                font-size: 24px;
+                font-weight: 600;
+                /* color: #087f57; */
+
+            }
+
+            .text {}
+
+            .icon {
+                width: 24px;
+                height: 24px;
+                stroke: #087f57;
+            }
+
+            .hidden-box {
+                grid-column: 2;
+                display: none;
+            }
+
+            .number {
+                color: #ced4da;
+            }
+
+
+
+
+
+
+            .number {
+                color: #868e96;
+            }
+
+            .hidden-box p {
+                line-height: 1.6;
+                margin-bottom: 24px;
+
+            }
+
+            .hidden-box ul {
+
+                color: #868e96;
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+            }
+
+            .hidden-box li {
+                margin-left: 18px;
+
+            }
+
+            .open {
+                border-top: 4px solid #087f57;
+            }
+
+            .open .hidden-box {
+                display: block;
+            }
+
+
+            .open .number,
+            .open .text {
+                color: #087f57;
+            }

@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCORDION PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;500;700&family=Tilt+Prism&display=swap" rel="stylesheet">
+    
+    <style>
+            /*sites for a color -- open color,  
+            tailwindcss , 
+            FLAT UI COLORS 2, 
+            tint and shade generator,
+            palleton.com,
+            to check the contrast between a text and bk color --> coolors .  
+            */
+            /*things to consider while choosing a color 
+
+                main color-
+                grey color-
+
+
+            */
+
+            /*
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+            */  
+             /*
+                MAIN COLOR:#087f57;
+                GRAY COLOR:#343a40;
+            */
+                
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family:'Inter',sans-serif;
+  color: #343a40;
+  
+
+}
+
+
+
+.btn{
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    border: 2px solid #087f57;
+/*    background-color: #087f57;*/
+    background: none;
+    cursor: pointer;
+
+}
+
+.btn-icon {
+    width: 24px;
+    height: 24px;
+   stroke: #087f57;
+
+}
+
+
+.container{
+    
+    display: flex;
+    margin-top: 200px   ;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+.links:link,
+.links:visited {
+    font-size:18px;
+    border: none;
+
+    color:#313a40;
+    text-decoration: none; 
+    margin-right: 12px; 
+    height: 36px; 
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.links.third-link{
+    background-color:#087f57;
+    color: #fff;
+}
+
+.links:hover,
+.links:active{
+    background-color: #087f57;
+    color: #fff;
+}
+
+
+
+.btn:hover {
+    background-color: #087f57;
+    
+
+}
+
+.btn:hover .btn-icon {
+    stroke: #fff;
+}
+
+
+.dots {
+color: gray;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-left">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+        </button>
+    
+        <a href="#" class="links">1</a>
+        <a href="#" class="links">2</a>
+        <a href="#" class="links third-link">3</a>
+        <a href="#" class="links">4</a>
+        <a href="#" class="links">5</a>
+        <a href="#" class="links">6</a>
+        <span class="dots">...</span>
+        <a href="#" class="links">23</a>
+        
+
+
+
+
+        <!-- the second button in the right side -->
+        <button class="btn btn-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+          
+</div>
+</body>
+</html>
